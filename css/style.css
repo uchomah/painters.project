@@ -1,0 +1,424 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/* Freight Bear Nig Limited Title */
+/* Freight Bear Nig Limited Title */
+.freight-title {
+    margin-right: auto; /* Pushes the title to the left */
+    padding: 0; /* Remove padding */
+}
+
+/* Navbar General Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0; /* No padding to keep items close to the edge */
+    position: relative;
+    z-index: 2;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    padding: 5px 15px;
+    font-size: 1rem;
+}
+
+/* Media Query for Mobile Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        padding-left: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+
+/* Navbar links */
+.navbar-nav .nav-item {
+    padding-left: 10px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+    
+    /* Navbar brand for mobile */
+    .navbar-brand {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+    
+    /* Hamburger icon */
+    .navbar-toggler {
+        margin-top: 5px;
+        border: none;
+    }
+    
+    /* Collapsed navbar content */
+    .navbar-collapse {
+        justify-content:flex-start;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 10px;
+    }
+    
+    /* Nav items stack vertically on mobile */
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .navbar-nav .nav-item {
+        text-align: left;
+        width: 100%;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* Fix dropdown behavior on mobile */
+    .dropdown-menu {
+        display: block;
+        position: static; /* Prevents dropdown from appearing outside the collapsed navbar */
+        float: none;
+        width: 100%;
+        background-color: white;
+    }
+
+    /* Style the dropdown items */
+    .dropdown-menu .dropdown-item {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: left;
+    }
+    
+    /* Fix the display of the dropdown on mobile collapse */
+    .dropdown-toggle::after {
+        display: none; /* Hides the default Bootstrap arrow */
+    }
+
+    .dropdown-menu[aria-expanded="false"] {
+        display: none; /* Hide dropdown when not expanded */
+    }
+
+    .dropdown-menu[aria-expanded="true"] {
+        display: block; /* Show dropdown when clicked */
+    }
+}
+.main-img .btn {
+    background-color: #00ff00;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 16px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    margin-bottom: -50px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Services Section */
+.services {
+    padding: 20px 15px; 
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.services-img{
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    margin: 15px auto;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin-top: 50px;
+    
+}
+
+.service-discover {
+    width: 100%;
+    text-align: center; /* Centers the heading */
+}
+
+.service-discover h2, .service-discover h3 {
+    padding-top: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.middle1, .middle2, .middle3 {
+    text-align: center;
+    
+}
+
+/* Clearfix for the row */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+/* Qualified Section */
+.qualified {
+    padding: 40px 15px; /* Reduced padding for smaller screens */
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align image and content vertically in the center */
+    justify-content: space-between; /* Ensure proper spacing between content and image */
+}
+
+.qualified-contents {
+    width: 100%; /* Set to 100% to fill available space */
+    padding-right: 20px; /* Adds spacing between the text and image */
+}
+
+.qualified-contents h2 {
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.qualified-contents p {
+    margin-bottom: 15px; /* Space below the paragraph */
+}
+
+.qualified-contents ul {
+    margin-bottom: 20px; /* Space below the list */
+}
+
+.qualified-image {
+    width: 100%; /* Ensure the image fills its container */
+    max-width: 100%; /* Set max width to 100% for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    object-fit: cover; /* Maintain aspect ratio */
+    display: block;
+    margin: 15px auto; /* Center the image */
+}
+
+@media (min-width: 768px) {
+    .qualified-image {
+        max-width: 100%; /* Allow the image to fill the container on larger screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .col-lg-8 {
+        padding-left: 15px; /* Add some padding on larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stacks content and image vertically on mobile */
+        text-align: center; /* Centers everything for smaller screens */
+    }
+
+    .qualified-contents {
+        margin-bottom: 20px; /* Add margin for spacing */
+    }
+
+    .qualified-image {
+        margin: 0; /* Remove top margin for better alignment */
+    }
+}
+
+
+/* Author Section */
+.author {
+    text-align: center;
+    padding: 30px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.author-img {
+    text-align: center;
+}
+
+.author-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensures the image covers the entire circular area */
+    transition: transform 0.5s ease-in-out; /* Smooth transform animation */
+}
+
+.carousel-item {
+    transition: opacity 0.5s ease-in-out; /* Fade transition for carousel items */
+}
+
+/* Hover effect for author images */
+.author-photo:hover {
+    transform: scale(00.5s); /* Slightly enlarge the image on hover */
+}
+
+
+
+/* Project Section */
+.project-heading {
+    margin-bottom: 20px;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    margin: 15px auto;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Team Section */
+.team {
+    padding: 50px 15px;
+}
+
+.team-img,
+.team-contents {
+    padding: 80px;
+}
+
+.team-img img {
+    
+    height: auto;
+    border-radius: 8px;
+}
+/* Procedure Section */
+.procedure {
+    background: linear-gradient(135deg, #87CEEB 0%, #ADD8E6 100%);
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.procedure .container-fluid {
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+}
+
+.procedure-heading h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.procedure-heading h3 {
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #555;
+}
+
+/* Add a gap between steps */
+.procedure-steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Adds space between columns */
+}
+
+.procedure-step {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 1s forwards ease-in-out;
+    flex: 1; /* Allows for flexibility in sizing */
+    min-width: 280px; /* Ensure the columns don’t shrink too much */
+}
+
+.procedure-step:hover {
+    transform: translateY(-10px);
+}
+
+.procedure-icon {
+    font-size: 40px;
+    color: #87CEEB;
+    margin-bottom: 15px;
+}
+
+.procedure-step h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.procedure-step p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+    .procedure-steps {
+        flex-direction: column; /* Stack the steps vertically on smaller screens */
+    }
+}
+
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 2;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .procedure-step {
+        margin-bottom: 0;
+    }
+}
+
+/* Customer Review Section */
+.customer {
+    padding: 50px 15px;
+    text-align: center;
+    background-color: #F9F9F9;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 15px;
+    text-align: center;
+}
+

@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/* Freight Bear Nig Limited Title */
+/* Freight Bear Nig Limited Title */
+.freight-title {
+    margin-right: auto; /* Pushes the title to the left */
+    padding: 0; /* Remove padding */
+}
+
+/* Navbar General Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0; /* No padding to keep items close to the edge */
+    position: relative;
+    z-index: 2;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    padding: 5px 15px;
+    font-size: 1rem;
+}
+
+/* Media Query for Mobile Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        padding-left: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+
+/* Navbar links */
+.navbar-nav .nav-item {
+    padding-left: 10px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+    
+    /* Navbar brand for mobile */
+    .navbar-brand {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+    
+    /* Hamburger icon */
+    .navbar-toggler {
+        margin-top: 5px;
+        border: none;
+    }
+    
+    /* Collapsed navbar content */
+    .navbar-collapse {
+        justify-content:flex-start;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 10px;
+    }
+    
+    /* Nav items stack vertically on mobile */
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .navbar-nav .nav-item {
+        text-align: left;
+        width: 100%;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* Fix dropdown behavior on mobile */
+    .dropdown-menu {
+        display: block;
+        position: static; /* Prevents dropdown from appearing outside the collapsed navbar */
+        float: none;
+        width: 100%;
+        background-color: white;
+    }
+
+    /* Style the dropdown items */
+    .dropdown-menu .dropdown-item {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: left;
+    }
+    
+    /* Fix the display of the dropdown on mobile collapse */
+    .dropdown-toggle::after {
+        display: none; /* Hides the default Bootstrap arrow */
+    }
+
+    .dropdown-menu[aria-expanded="false"] {
+        display: none; /* Hide dropdown when not expanded */
+    }
+
+    .dropdown-menu[aria-expanded="true"] {
+        display: block; /* Show dropdown when clicked */
+    }
+}
+/* Clearfix */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: rgb(25,107,211);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Services Section Styles */
+.services {
+    padding: 40px 0;
+    background-color: white;
+}
+
+.services .service {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services .service img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services .service h3 {
+    margin: 20px 0 10px;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+.services .service p {
+    font-size: 16px;
+    color: #555;
+    margin: 0 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .services .service {
+        display: inline-block;
+        width: 30%;
+        margin-right: 3.333%;
+    }
+
+    .services .service:last-child {
+        margin-right: 0;
+    }
+}
